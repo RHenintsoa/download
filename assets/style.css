@@ -1,0 +1,634 @@
+body {
+    margin: 0;
+    background: #FFE5EC;
+    color: #FB6F92;
+}
+.title{
+    text-align: center;
+}
+h1{
+  animation: title 1s infinite;
+}
+@keyframes title{
+  from{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /*  flex-direction: column;*/
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:600px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+    left: 15px;
+    transition-property: all 1s ease;
+  }
+}
+@media only screen and (min-width:600px){
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+    right: 30px;
+  }
+}
+@media only screen and (min-width:768px){
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+  }
+}
+@media only screen and (min-width:992px){
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+    left: 20px;
+  }
+}
+@media only screen and (min-width:1200px){
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px;
+    margin: 10px;
+    position:relative;
+    left: 10px;
+  }
+}
+
+.item {
+    width: 500px;
+    height: 330px;
+    border: solid 2px #FFB3C6;
+    background:#FF8FA3;
+}
+
+.download-bar1 {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid 20px beige;
+    animation: download1 7s 1 10ms;
+    position: relative;
+    top: 20px;
+}
+
+@keyframes download1 {
+    from {
+        transform: rotate(22deg);
+        border-top: solid 20px #00A8E8;
+    }
+
+    to {
+        transform: rotate(90deg);
+        border-top: solid 20px #00A8E8;
+    }
+
+    from {
+        transform: rotate(22deg);
+        border-top: solid 20px  #00A8E8;
+    }
+    to{
+        transform: rotate(112deg);
+        border-top: solid 20px  #00A8E8; 
+       
+    }
+    from{
+        transform: rotate(22deg);
+    }
+    to{
+        transform: rotate(202deg);
+        border-top: solid 20px  #00A8E8; 
+    }
+    from{
+        transform: rotate(22deg);
+    }
+    to{
+        transform: rotate(320deg);
+        border: solid 20px  #00A8E8; 
+    }
+}
+/* deuxième barre de progression*/
+.download-bar2{
+    width: 400px;
+    height: 5px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 150px;
+    background-color: white;
+    animation: download2 10s infinite;
+}
+@keyframes download2{
+  from{
+    background: white;
+    
+  }
+  to{
+    background: #1982C4;
+  }
+}
+
+.bar1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    top: -20px;
+    text-align: center;
+    animation-name: bar1;
+    animation-duration: 50s;
+    animation-delay: -40s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes bar1 {
+  from{
+    background: white;
+  }
+  to{
+    background: #1982C4;
+    color: #00171F;
+  }
+}
+.bar2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    animation-name: bar2;
+    animation-duration: 40s;
+    animation-delay: -30s;
+    animation-iteration-count: infinite;
+}
+@keyframes bar2 {
+  from{
+    background: white;
+  }
+  to{
+    background: #1982C4;
+    color: #00171F;
+  }
+}
+.bar3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    animation-name: bar3;
+    animation-duration: 30s;
+    animation-delay: -20s;
+    animation-iteration-count: infinite;
+}
+@keyframes bar3 {
+  from{
+    background: white;
+  }
+  to{
+    background: #1982C4;
+    color: #00171F;
+  }
+}
+.bar4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    animation-name: bar4;
+    animation-duration: 20s;
+    animation-delay: -10s;
+    animation-iteration-count: infinite;
+}
+@keyframes bar4 {
+  from{
+    background: white;
+  }
+  to{
+    background: #1982C4;
+    color: #00171F;
+  }
+}
+.bar5{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    position: relative;
+    top: -20px;
+    animation-name: bar5;
+    animation-duration: 10s;
+   /*animation-delay: 6s;*/
+    animation-iteration-count: infinite;
+}
+@keyframes bar5 {
+  from{
+    background: white;
+  }
+  to{
+    background: #1982C4;
+    color: #00171F;
+  }
+}
+/*Troisième barre de progression*/
+.download-bar3{
+    width: 400px;
+    height: 20px;
+    border-radius: 15px;
+    background: white;
+    position: relative;
+    top: 140px;
+    margin-left: 50px;
+    padding-left: 7px;
+    animation: download3 7s infinite;
+   
+}
+@keyframes download3{
+    0%{
+        width: 0px;
+        background: #00A8E8;
+        color: #00171F;
+    }
+    25%{
+        width: 100px;
+        background: #00A8E8;
+        color: #00171F;
+    }
+    50%{
+        width: 200px;
+        background: #00A8E8;
+        color: #00171F;
+    }
+    75%{
+        width: 300px;
+        background: #00A8E8;
+        color: #00171F;
+    }
+    100%{
+        width: 400px;
+        background: #00A8E8;
+        color: #00171F;
+    }
+}
+/*Quatrième barre de progression*/
+.download-bar4{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+.point1{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    animation: animation-point1 5s infinite;
+   /* animation-delay: -40s;*/
+}
+.point2{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    animation: animation-point2 10s infinite;
+    /*animation-delay: -30s;*/
+}
+.point3{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    animation: animation-point3 12s infinite;
+  /* animation-delay: -20s;*/
+}
+.point4{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    animation: animation-point4 15s infinite;
+  /* animation-delay: -10s;*/
+}
+.point5{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    animation: animation-point5 20s infinite;
+}
+@keyframes animation-point1 {
+  from{
+    transform: rotateX(90deg);
+  }
+  to{
+    transform:rotateY(180deg);
+    background: #00A8E8;
+  }
+}
+@keyframes animation-point2 {
+    from{
+      transform: rotateX(90deg);
+    }
+    to{
+      transform:rotateY(180deg);
+      background: #00A8E8;
+    }
+  }
+  @keyframes animation-point3 {
+    from{
+      transform: rotateX(90deg);
+    }
+    to{
+      transform:rotateY(180deg);
+      background: #00A8E8;
+    }
+  }
+  @keyframes animation-point4 {
+    from{
+      transform: rotateX(90deg);
+    }
+    to{
+      transform:rotateY(180deg);
+      background: #00A8E8;
+    }
+  }
+  @keyframes animation-point5 {
+    from{
+      transform: rotateX(90deg);
+    }
+    to{
+      transform:rotateY(180deg);
+      background: #00A8E8;
+    }
+  }
+  /*Cinquième Progress bar*/
+  .download-bar5{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    border-radius: 5px;
+    border: solid 2px white;
+    padding: 4px;
+  }
+  .box{
+    height: 30px;
+    width: 20px;
+    background: white;
+    border-radius: 1px;
+  }
+  .box1{
+    animation: box1 1s infinite;
+  }
+  @keyframes box1 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box2{
+    animation: box2 2s infinite;
+  }
+  @keyframes box2 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box3{
+    animation: box3 3s infinite;
+  }
+  @keyframes box3 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box4{
+    animation: box4 4s infinite;
+  }
+  @keyframes box4 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box5{
+    animation: box5 5s infinite;
+  
+  }
+  @keyframes box5 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box6{
+    animation: box6 6s infinite;
+    /*animation-delay: 50s;*/
+  }
+  @keyframes box6{
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box7{
+    animation: box7 7s infinite;
+   /* animation-delay: 50s;*/
+  }
+  @keyframes box7 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box8{
+    animation: box8 8s infinite;
+   /* animation-delay: 50s;*/
+  }
+  @keyframes box8 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box9{
+    animation: box9 9s infinite;
+    /*animation-delay: 50s;*/
+  }
+  @keyframes box9 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  .box10{
+    animation: box10 10s infinite;
+   /* animation-delay: 50s;*/
+  }
+  @keyframes box10 {
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(180deg);
+      background: #1982C4;
+    }
+  }
+  /* Sixième barre de progression*/
+  .download-bar6{
+    width: 400px;
+    height: 35px;
+    border: solid 7px white;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    top: 130px;
+    border-radius: 25px;
+
+  }
+  .line{
+    width: 350px;
+    margin-left: 30px;
+    position: relative;
+    top: 15px;
+    height: 2px;
+    background-color: white;
+    animation: dowload6 7s 1ms infinite;
+  }
+  .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #1982C4;
+    position: relative;
+    top: -10px;
+    animation: circle 7s 1ms infinite;
+  }
+  @keyframes dowload6 {
+    0%{
+      width: 70px;
+      background: #1982C4;
+    }
+    25%{
+      width: 140px;
+      background: #1982C4;
+    }
+    50%{
+      width: 210px;
+      background: #1982C4;
+    }
+    75%{
+      width: 280px;
+      background: #1982C4;
+    }
+    100%{
+      width: 350px;
+      background: #1982C4;
+    }
+  }
+  @keyframes circle {
+    0%{
+      translate: 70px;
+    }
+    25%{
+      translate: 140px;
+    }
+    50%{
+      translate: 210px;
+    }
+    75%{
+      translate: 280px;
+    }
+    100%{
+      translate: 350px;
+    }
+
+  }
